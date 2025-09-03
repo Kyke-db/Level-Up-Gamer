@@ -1,4 +1,4 @@
-/* Estilos globales */
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -16,10 +16,11 @@ header {
   top: 0;
 }
 
-.logo {
+.NombreLogo {
   font-family: 'Orbitron', sans-serif;
-  font-size: 1.5em;
+  font-size: 40px;
   color: #39FF14;
+  
 }
 
 nav ul {
@@ -43,13 +44,13 @@ nav a {
 
 .btn {
   display: inline-block;
-  margin-top: 20px;
+  margin-top: px;
   padding: 12px 24px;
   background: #000;
   color: #39FF14;
-  border-radius: 8px;
+  border-radius: 25px;
   text-decoration: none;
-  transition: 0.3s;
+  
 }
 
 .btn:hover {
@@ -105,4 +106,8 @@ footer {
   padding: 20px;
   background: #111111;
   margin-top: 40px;
+}
+
+img {
+  display: flex;
 }
