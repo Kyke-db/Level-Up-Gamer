@@ -1,48 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Level-Up Gamer</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="CSS/IndexStyle.css">
 
-  <!-- Fuentes Google -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron:wght@600&display=swap" rel="stylesheet"> -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron:wght@600&display=swap" rel="stylesheet"> 
 </head>
 <body>
-  <!-- Header -->
+
   <header>
-    <div class = "imagenlogo"><img src="MEDIA/wmremove-transformed-removebg-preview.png" ></div>
-    <div class="logo"> Level-Up Gamer</div>
+    <div class = "imagenlogo"><img src="MEDIA/image.png" style="height: 200px;"></div>
+    <div class="NombreLogo"> Level-Up Gamer</div>
     <nav>
       <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="catalogo.html">Catálogo</a></li>
         <li><a href="carrito.html">Carrito</a></li>
-        <li><a href="login.html">Login</a></li>
+        <li><a href="login.html">Cerrar Sesion</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Hero Section -->
+
   <section class="hero">
     <h1>¡Bienvenido a Level-Up Gamer!</h1>
     <p>Tu tienda online de productos gamers en Chile</p>
     <a href="catalogo.html" class="btn">Ver Catálogo</a>
   </section>
 
-  <!-- Productos destacados -->
+
   <section class="destacados">
     <h2>Productos Destacados</h2>
     <div class="productos">
       <div class="card">
-        <img src="img/ps5.jpg" alt="PlayStation 5">
+        <img src="MEDIA/ps5.png" alt="PlayStation 5">
         <h3>PlayStation 5</h3>
         <p>$549.990 CLP</p>
         <button onclick="agregarAlCarrito('PlayStation 5', 549990)">Agregar al carrito</button>
       </div>
       <div class="card">
-        <img src="img/g502.jpg" alt="Mouse Logitech G502">
+        <img src="MEDIA/g502-hero-gallery-1.png" alt="Mouse Logitech G502">
         <h3>Mouse Logitech G502 HERO</h3>
         <p>$49.990 CLP</p>
         <button onclick="agregarAlCarrito('Mouse G502 HERO', 49990)">Agregar al carrito</button>
@@ -50,11 +51,11 @@
     </div>
   </section>
 
-  <!-- Footer -->
+
   <footer>
     <p>© 2025 Level-Up Gamer - Todos los derechos reservados</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="IndexScript.js"></script>
 </body>
 </html>

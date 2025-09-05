@@ -1,10 +1,10 @@
-
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   background-color: #000000;
   color: #FFFFFF;
 }
+
 
 header {
   display: flex;
@@ -14,19 +14,29 @@ header {
   background-color: #111111;
   position: sticky;
   top: 0;
+  flex-wrap: wrap;
+}
+
+.imagenlogo img {
+  max-width: 1200px; 
+  height: auto;
 }
 
 .NombreLogo {
   font-family: 'Orbitron', sans-serif;
   font-size: 40px;
   color: #39FF14;
-  
+  flex: 1; 
+  text-align: center;
 }
 
 nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
 }
 
 nav a {
@@ -34,6 +44,7 @@ nav a {
   color: #1E90FF;
   font-weight: bold;
 }
+
 
 .hero {
   text-align: center;
@@ -44,13 +55,12 @@ nav a {
 
 .btn {
   display: inline-block;
-  margin-top: px;
+  margin-top: 20px;
   padding: 12px 24px;
   background: #000;
   color: #39FF14;
   border-radius: 25px;
   text-decoration: none;
-  
 }
 
 .btn:hover {
@@ -58,7 +68,7 @@ nav a {
   color: #fff;
 }
 
-/* Cards de productos */
+
 .destacados {
   padding: 40px 20px;
   text-align: center;
@@ -68,7 +78,7 @@ nav a {
   display: flex;
   justify-content: center;
   gap: 20px;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
 }
 
 .card {
@@ -101,6 +111,7 @@ button:hover {
   color: #000;
 }
 
+
 footer {
   text-align: center;
   padding: 20px;
@@ -108,6 +119,45 @@ footer {
   margin-top: 40px;
 }
 
+
 img {
-  display: flex;
+  max-width: 100%;
+  height: auto;
+}
+
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .NombreLogo {
+    font-size: 28px; 
+    margin: 10px 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .hero {
+    padding: 40px 10px;
+  }
+
+  .card {
+    width: 90%; /
+  }
+}
+
+@media (max-width: 480px) {
+  .NombreLogo {
+    font-size: 22px;
+  }
+
+  .imagenlogo img {
+    max-width: 120px;
+  }
 }
